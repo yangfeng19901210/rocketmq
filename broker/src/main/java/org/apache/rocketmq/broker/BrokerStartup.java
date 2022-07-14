@@ -99,6 +99,8 @@ public class BrokerStartup {
             }
 
             final BrokerConfig brokerConfig = new BrokerConfig();
+            brokerConfig.setRocketmqHome(System.getProperty("user.dir"));
+            brokerConfig.setBrokerIP1("127.0.0.1");
             final NettyServerConfig nettyServerConfig = new NettyServerConfig();
             final NettyClientConfig nettyClientConfig = new NettyClientConfig();
 
